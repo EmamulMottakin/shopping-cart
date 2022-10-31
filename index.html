@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- @bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- @main css -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <section class="d-flex jsutify-content-center align-items-center bg-dark">
+        <div class="container">
+            <div class="w-100 bg-dark cartWraper">
+                <div class="container">
+
+                    <div class="cart d-flex w-100 bg-dark py-3 text-center">
+
+                        <!-- @course image -->
+                        <div class="img">
+                            <img src="img/js output innerHTML.png" class="img-fluid">
+                        </div>
+                        <!-- @course title -->
+                        <div class="title">
+                            <p>What is innerHTML? JavaScript Bangla Tutorial | Part - 3.1</p>
+                        </div>
+                        <!-- @course quantity -->
+                        <div class="quantity text-light mb-3 rounded">
+                            <button id="decrease" onclick="productCounter ('js', false)" class="btn btn-outline-light"> - </button>
+                            <input onchange="productCounter ('js')" id="js-quantity" type="text" value= 1 class="px-3 form-control quantity-input">
+                            <button id="increase" onclick="productCounter ('js', true)" class="btn btn-outline-light"> + </button>
+                        </div>
+                        <!-- @course price -->
+                        <div class="price ">
+                            <p><span id="js-price">1000</span> tk</p>
+                        </div>
+    
+                    </div>
+
+                    <hr>
+    
+                    <div class="cart d-flex w-100 bg-dark py-3 text-center">
+    
+                        <!-- @course image -->
+                        <div class="img">
+                            <img src="img/html tutorial for beginners.png" class="img-fluid">
+                        </div>
+                        <!-- @course title -->
+                        <div class="title">
+                            <p>What is HTML? HTML Bangla Tutorial | Part - 1</p>
+                        </div>
+                        <!-- @course quantity -->
+                        <div class="quantity text-light mb-3 rounded">
+                            <button onclick="productCounter ('htmlCourse', false)" class="btn btn-outline-light"> - </button>
+                            <input onchange="productCounter ('htmlCourse')" type="text" id="htmlCourse-quantity" value="1" class="px-3 form-control quantity-input">
+                            <button onclick="productCounter ('htmlCourse', true)" class="btn btn-outline-light"> + </button>
+                        </div>
+                        <!-- @course price -->
+                        <div class="price ">
+                            <p><span id="htmlCourse-price">995</span> tk</p>
+                        </div>
+    
+                    </div>
+
+                    <hr>
+    
+                    <!-- total pricing -->
+                    <div class="cart d-flex w-100 bg-dark py-3">
+                        
+                        <div class="price-info">
+                            <h6>Sub Total Price</h6>
+                            <h6>tax</h6>
+                            <h6>Grand Total Price</h6>
+                        </div>
+
+                        <div class="price-info">
+                            <p><span id="sub-total-price">1995</span>tk</p>
+                            <p><span>0</span>tk</p>
+                            <p><span id="grand-total-price">1995</span>tk</p>
+                        </div>
+
+    
+                    </div>
+
+                    <a href="#" class="btn btn-success ">Check Out</a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- @bootstrap script -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- @main script -->
+    <script src="js/app.js"></script>
+</body>
+</html>
